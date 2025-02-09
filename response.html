@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Call Flow Log</title>
+  <link rel="stylesheet" href="/logs/static/styles.css">
+</head>
+<body>
+  <h1>Call Flow Log</h1>
+  <form action="/logs/" method="post">
+    <label for="number">Enter Dialed Number:</label>
+    <input type="text" name="number" id="number" value="0528826702" required>
+    <button type="submit">Search</button>
+  </form>
+
+  
+    <h2>Call Flow Details</h2>
+    <ul>
+      
+        <li>
+          <strong>Call Sent to Ring Group</strong>
+          
+            (Destination: 492)
+          
+          <p>cf0b95dd-4624-41fe-83d0-daadb325401a 2025-02-03 19:03:42.071002 [NOTICE] switch_ivr.c:2250 Transfer sofia/external-5082/0528826702@35.157.80.227 to XML[492@9505.ip-com.co.il]</p>   
+        </li>
+      
+        <li>
+          <strong>Time Condition Applied</strong>
+          
+            (Destination: 892)
+          
+          <p>cf0b95dd-4624-41fe-83d0-daadb325401a 2025-02-03 19:03:42.150996 [NOTICE] switch_ivr.c:2250 Transfer sofia/external-5082/0528826702@35.157.80.227 to XML[892@9505.ip-com.co.il]</p>
+        </li>
+      
+        <li>
+          <strong>Time Condition Applied</strong>
+          
+            (Destination: 802)
+          
+          <p>cf0b95dd-4624-41fe-83d0-daadb325401a 2025-02-03 19:03:42.210990 [NOTICE] switch_ivr.c:2250 Transfer sofia/external-5082/0528826702@35.157.80.227 to XML[802@9505.ip-com.co.il]</p>
+        </li>
+        <li>
+          <strong>Call Passed Through an IVR</strong>
+          
+            (Destination: 604)
+          
+          <p>cf0b95dd-4624-41fe-83d0-daadb325401a 2025-02-03 19:03:42.231003 [NOTICE] switch_ivr.c:2250 Transfer sofia/external-5082/0528826702@35.157.80.227 to XML[604@9505.ip-com.co.il]</p>
+        </li>
+      
+        <li>
+          <strong>Call Routed to an Extension</strong>
+          
+            (Destination: 356)
+          
+          <p>cf0b95dd-4624-41fe-83d0-daadb325401a 2025-02-03 19:03:48.671003 [NOTICE] switch_ivr.c:2250 Transfer sofia/external-5082/0528826702@35.157.80.227 to XML[356@9505.ip-com.co.il]</p>
+        </li>
+      
+        <li>
+          <strong>Call Ended</strong>
+          
+          <p>Callee Disconnected First - Hangup by sofia/external-5082/0528826702@35.157.80.227 due to NORMAL_CLEARING (The call ended normally.)</p>
+          
+            <p>Party: sofia/external-5082/0528826702@35.157.80.227</p>
+          
+          
+            <p>Reason: NORMAL_CLEARING</p>
+          
+          
+            <p>Details: The call ended normally.</p>
+          
+          
+            <p>Callee Disconnected First</p>
+        </li>
+    </ul>
+  
+</body>
+</html>

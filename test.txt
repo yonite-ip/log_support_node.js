@@ -1,0 +1,6 @@
+cf0b95dd-4624-41fe-83d0-daadb325401a 2025-02-03 19:03:42.071002 [NOTICE] switch_ivr.c:2250 Transfer sofia/external-5082/0528826702@35.157.80.227 to XML[492@9505.ip-com.co.il]
+cf0b95dd-4624-41fe-83d0-daadb325401a 2025-02-03 19:03:42.150996 [NOTICE] switch_ivr.c:2250 Transfer sofia/external-5082/0528826702@35.157.80.227 to XML[892@9505.ip-com.co.il]
+cf0b95dd-4624-41fe-83d0-daadb325401a 2025-02-03 19:03:42.210990 [NOTICE] switch_ivr.c:2250 Transfer sofia/external-5082/0528826702@35.157.80.227 to XML[802@9505.ip-com.co.il]
+cf0b95dd-4624-41fe-83d0-daadb325401a 2025-02-03 19:03:42.231003 [NOTICE] switch_ivr.c:2250 Transfer sofia/external-5082/0528826702@35.157.80.227 to XML[604@9505.ip-com.co.il]
+cf0b95dd-4624-41fe-83d0-daadb325401a 2025-02-03 19:03:48.671003 [NOTICE] switch_ivr.c:2250 Transfer sofia/external-5082/0528826702@35.157.80.227 to XML[356@9505.ip-com.co.il]
+Callee Disconnected First - Hangup by sofia/external-5082/0528826702@35.157.80.227 due to NORMAL_CLEARING (The call ended normally.)
