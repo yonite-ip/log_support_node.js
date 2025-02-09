@@ -139,35 +139,37 @@ const AnalyzeCallFlow: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 py-10 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-9xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
           Analyze Call Flow
         </h2>
-
-        {/* Input Section */}
-        <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-lg mb-8">
-          <h3 className="text-xl font-semibold text-gray-700 mb-4">
-            Enter Phone Number
-          </h3>
-          <div className="flex items-center">
-            <input
-              type="text"
-              className="flex-1 p-3 border border-gray-300 rounded-l focus:outline-none focus:ring-2 focus:ring-blue-400"
-              placeholder="Enter phone number"
-              value={phoneNumber}
-              onChange={(e) => setPhoneNumber(e.target.value)}
-            />
-            <button
-              className="p-3 bg-blue-500 text-white rounded-r hover:bg-blue-600 transition disabled:opacity-50"
-              onClick={handleAnalyze}
-              disabled={isLoading}
-            >
-              {isLoading ? "Analyzing..." : "Analyze Call Flow 🔍"}
-            </button>
+  
+        {/* Input Section - Limited to 4xl */}
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-lg mb-8">
+            <h3 className="text-xl font-semibold text-gray-700 mb-4">
+              Enter Phone Number
+            </h3>
+            <div className="flex items-center">
+              <input
+                type="text"
+                className="flex-1 p-3 border border-gray-300 rounded-l focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Enter phone number"
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.target.value)}
+              />
+              <button
+                className="p-3 bg-blue-500 text-white rounded-r hover:bg-blue-600 transition disabled:opacity-50"
+                onClick={handleAnalyze}
+                disabled={isLoading}
+              >
+                {isLoading ? "Analyzing..." : "Analyze Call Flow 🔍"}
+              </button>
+            </div>
+            {error && <p className="text-red-500 mt-4">{error}</p>}
           </div>
-          {error && <p className="text-red-500 mt-4">{error}</p>}
         </div>
-
+  
         {callId && (
           <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-lg">
             <div className="mb-4 flex justify-between items-center">
@@ -198,6 +200,7 @@ const AnalyzeCallFlow: React.FC = () => {
       </div>
     </div>
   );
+    
 };
 
 export default AnalyzeCallFlow;

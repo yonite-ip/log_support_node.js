@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
-import GridLayout from "react-grid-layout";
 import ReactFlow, {
   Background,
   Controls,
-  Edge,
   Node,
   ReactFlowProvider,
   MarkerType,
@@ -16,7 +14,6 @@ import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
 import "reactflow/dist/style.css";
 import {
-  FaTimes,
   FaRoute,
   FaClock,
   FaNetworkWired,
